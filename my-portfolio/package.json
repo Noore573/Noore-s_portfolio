@@ -1,5 +1,8 @@
 {
-  "homepage": "https://github.com/Noore573/Noore-s_portfolio.git",
+  "homepage": "https://Noore573.github.io/Noore-s_portfolio",
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/Noore573/Noore-s_portfolio.git"},
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
