@@ -1,36 +1,83 @@
-import React from "react";
+// src/components/Hero.jsx
+import React, { useState, useEffect } from "react";
 import { FaEnvelope, FaLinkedin, FaGithub, FaFigma } from "react-icons/fa";
 import mouseIcon from "../assets/mouse.png";
 
+const roles = [
+    "AI Engineer",
+    "Software Engineer",
+    "Mobile Developer",
+    "Web Developer",
+    "Data Scientist",
+    "UI/UX Designer",
+];
 
 const Hero = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % roles.length);
+        }, 2500); // ⏱ change every 2.5s
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <section
             id="hero"
-            className="h-screen flex flex-col justify-center items-center text-center text-white bg-hero-gradient px-4"
+            className="h-screen flex flex-col justify-center items-center text-center text-white bg-hero-gradient px-4 relative"
         >
-            {/* Name & Title */}
-            <h1 className="text-5xl md:text-7xl font-bold mb-4">NOORE SABAH</h1>
-            <h2 className="text-xl md:text-2xl font-semibold mb-6">
-                SOFTWARE ENGINEER & AI SPECIALIST
+            {/* Name */}
+            <h1 className="text-5xl md:text-7xl font-bold font-righteous mb-4">
+                NOORE SABAH
+            </h1>
+
+            {/* Animated Titles */}
+            <h2 className="text-xl md:text-2xl font-semibold font-robotoFlex mb-6 h-8 overflow-hidden">
+                <span
+                    key={currentIndex} // forces re-animation
+                    className="block animate-slideUp"
+                >
+                    {roles[currentIndex]}
+                </span>
             </h2>
-            <p className="max-w-2xl text-gray-300 italic mb-8">
+
+            {/* Subtitle */}
+            <p className="max-w-2xl text-gray-300 italic font-robotoFlex mb-8">
                 Bridging AI, Data, And Design To Craft Intelligent, User-Focused Web And
                 Mobile Experiences.
             </p>
 
             {/* Social Icons */}
             <div className="flex gap-6 text-3xl mb-8">
-                <a href="mailto:your@email.com" className="hover:text-cyan-400">
+                <a
+                    href="mailto:nooresabah10@gmail.com"
+                    className="hover:text-cyan-400"
+                >
                     <FaEnvelope />
                 </a>
-                <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400">
+                <a
+                    href="https://www.linkedin.com/in/noore-sabah-7a6292279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-cyan-400"
+                >
                     <FaLinkedin />
                 </a>
-                <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400">
+                <a
+                    href="https://github.com/Noore573"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-cyan-400"
+                >
                     <FaGithub />
                 </a>
-                <a href="https://figma.com/@yourfigma" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400">
+                <a
+                    href="https://www.figma.com/@NooreSabah"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-cyan-400"
+                >
                     <FaFigma />
                 </a>
             </div>
@@ -38,7 +85,7 @@ const Hero = () => {
             {/* About Me Button */}
             <a
                 href="#about"
-                className="px-6 py-2 rounded-full bg-cyan-400 text-blue-900 font-semibold hover:bg-cyan-300 transition"
+                className="px-6 py-2 rounded-full bg-cyan-400 text-blue-900 font-semibold font-robotoFlex hover:bg-cyan-300 transition delay-75"
             >
                 About Me
             </a>
@@ -46,7 +93,7 @@ const Hero = () => {
             {/* Scroll Indicator */}
             <div className="absolute bottom-6 animate-bounce">
                 <img
-                    src={mouseIcon} // ✅ if in src/assets
+                    src={mouseIcon}
                     alt="Scroll Indicator"
                     className="w-8 h-8 opacity-80"
                 />

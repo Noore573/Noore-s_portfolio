@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "@fontsource/righteous";
+@import "@fontsource/roboto-slab";
+@import "@fontsource/roboto-flex";
 
 
 body {
@@ -17,4 +20,28 @@ code {
     monospace;
 }
 
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
 
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 2.5s ease-in-out forwards;
+} 

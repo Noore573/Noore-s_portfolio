@@ -54,6 +54,11 @@ module.exports = {
         slideInUp: "slideInUp .5s ease-out forwards",
         slideInDown: "slideInDown .5s ease-out forwards",
       },
+      fontFamily: {
+        righteous: ["Righteous", "cursive"],
+        robotoSlab: ["Roboto Slab", "serif"],
+        robotoFlex: ["Roboto Flex", "sans-serif"],
+      },
     },
   },
   plugins: [],

@@ -7,6 +7,8 @@ const ProjectCard = ({
     text = "Project details",
     slide = "left",   // "left" | "right" | "up" | "down"
     bgColor = "#0ea5e9", // default cyan-500
+    textClassName = "text-white text-sm",
+    link = null, // ✅ new prop for external/internal link
 }) => {
     const slideOutAnim = {
         left: "group-hover:animate-slideOutLeft",
@@ -22,33 +24,45 @@ const ProjectCard = ({
         down: "group-hover:animate-slideInDown",
     }[slide];
 
-    return (
+    const cardContent = (
         <div
-            className={`relative bg-glass-gradient backdrop-blur-lg rounded-xl shadow-lg overflow-hidden group ${className}`}
+            className={`relative bg-glass-gradient backdrop-blur-lg rounded-xl shadow-lg overflow-hidden group cursor-pointer ${className}`}
         >
             {/* Icon (slides out + fades) */}
             <div
-                className={`
-          absolute inset-0 flex items-center justify-center p-4
-          ${slideOutAnim}
-        `}
+                className={`absolute inset-0 flex items-center justify-center p-4 ${slideOutAnim}`}
             >
                 {children}
             </div>
 
-            {/* Slide-in background + text */}
+            {/* Slide-in background + centered text */}
             <div
                 style={{ backgroundColor: bgColor }}
                 className={`
-          absolute inset-0 flex items-center justify-center 
-          text-white text-center font-semibold text-lg 
-          opacity-0
-          ${slideInAnim}
-        `}
+                    absolute inset-0 flex items-center justify-center font-robotoFlex
+                    opacity-0 ${slideInAnim}
+                `}
             >
-                {text}
+                <div
+                    className={`text-center font-robotoFlex font-bold tracking-wide ${textClassName}`}
+                    dangerouslySetInnerHTML={{ __html: text }}
+                />
             </div>
         </div>
+    );
+
+    // ✅ If link is provided, wrap card in <a>
+    return link ? (
+        <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+        >
+            {cardContent}
+        </a>
+    ) : (
+        cardContent
     );
 };
 
