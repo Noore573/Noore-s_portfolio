@@ -25,7 +25,7 @@ const Hero = () => {
     return (
         <section
             id="hero"
-            className="h-screen flex flex-col justify-center items-center text-center text-white bg-hero-gradient px-4 relative"
+            className="h-screen flex flex-col justify-center items-center text-center text-white  px-4 relative"
         >
             {/* Name */}
             <h1 className="text-5xl md:text-7xl font-bold font-righteous mb-4">
@@ -33,7 +33,7 @@ const Hero = () => {
             </h1>
 
             {/* Animated Titles */}
-            <h2 className="text-xl md:text-2xl font-semibold font-robotoFlex mb-6 h-8 overflow-hidden">
+            <h2 className="text-xl md:text-3xl font-semibold font-robotoFlex mb-6 h-9 overflow-hidden">
                 <span
                     key={currentIndex} // forces re-animation
                     className="block animate-slideUp"

@@ -2,7 +2,7 @@ import React from "react";
 
 const GlassPanel = ({ title, subtitle, details }) => {
     return (
-        <div className="relative bg-glass-gradient backdrop-blur-lg rounded-2xl shadow-lg overflow-hidden h-[500px] flex items-center justify-center group cursor-pointer">
+        <div className="relative bg-glass-gradient animate-glass-diagonal backdrop-blur-lg rounded-2xl shadow-lg overflow-hidden h-[500px] flex items-center justify-center group cursor-pointer">
             {/* Default Content */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 transition-transform duration-500 group-hover:-translate-y-full">
                 <h3 className="text-2xl font-bold">{title}</h3>

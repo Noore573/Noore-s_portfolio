@@ -44,4 +44,16 @@ code {
 
 .animate-slideUp {
   animation: slideUp 2.5s ease-in-out forwards;
-} 
+}
+
+.bg-hero-gradient {
+  background-size: 400% 400%;
+  background-attachment: fixed;
+  image-rendering: optimizeQuality;
+  filter: contrast(105%) brightness(102%);
+
+}
+
+.bg-glass-gradient {
+  background-size: 400% 400%;
+}

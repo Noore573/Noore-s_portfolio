@@ -23,7 +23,7 @@ const Projects = () => {
     return (
         <section
             id="projects"
-            className="h-screen flex flex-col justify-center items-center text-white bg-hero-gradient px-6 relative"
+            className="h-screen flex flex-col justify-center items-center text-white px-6 relative"
         >
             {/* <h2 className="text-4xl font-bold mb-12">Projects</h2> */}
 
@@ -132,7 +132,7 @@ const Projects = () => {
                             textClassName="text-black text-sm font-light leading-relaxed whitespace-pre-line"
                             link={"https://github.com/Noore573/Customer-_segmentation"}
                             className="h-[200px] w-[300px]">
-                            <img src={Customerseg} alt="" className="w-28 h-28" />
+                            <img src={Customerseg} alt="" className="w-24 h-24" />
                         </ProjectCard>
                     </div>
 
@@ -170,14 +170,14 @@ const Projects = () => {
             </div>
 
             {/* Return Home button */}
-            <div className="absolute bottom-6 font-robotoFlex ">
+            {/* <div className="absolute bottom-6 font-robotoFlex ">
                 <a
                     href="#hero"
                     className="px-6 py-2 rounded-full bg-cyan-400 text-blue-900 font-semibold hover:bg-cyan-300 transition"
                 >
                     Return Home
                 </a>
-            </div>
+            </div> */}
         </section>
     );
 };

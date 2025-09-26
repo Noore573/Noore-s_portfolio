@@ -26,7 +26,7 @@ const ProjectCard = ({
 
     const cardContent = (
         <div
-            className={`relative bg-glass-gradient backdrop-blur-lg rounded-xl shadow-lg overflow-hidden group cursor-pointer ${className}`}
+            className={`relative bg-glass-gradient animate-glass-diagonal backdrop-blur-lg rounded-xl shadow-lg overflow-hidden group cursor-pointer ${className}`}
         >
             {/* Icon (slides out + fades) */}
             <div

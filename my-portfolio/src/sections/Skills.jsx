@@ -6,7 +6,7 @@ const Skills = () => {
     return (
         <section
             id="skills"
-            className="h-screen font-robotoFlex tracking-normal flex flex-col justify-center items-center text-white bg-hero-gradient px-6 relative"
+            className="h-screen font-robotoFlex tracking-normal flex flex-col justify-center items-center text-white  px-6 relative"
         >
             {/* <h2 className="text-4xl font-bold mb-12">Skills</h2> */}
 
