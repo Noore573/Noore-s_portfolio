@@ -40,7 +40,7 @@ const Projects = () => {
                         bgColor="#00D2A1"
                         textClassName="text-black text-xl font-light leading-relaxed whitespace-pre-line"
 
-                        className="h-[400px] w-[400px]"
+                        className="h-[390px] w-[400px]"
                     >
                         <img src={interactivesurfac} alt="" className="w-56 h-56" />
                     </ProjectCard>
@@ -55,7 +55,7 @@ const Projects = () => {
                             bgColor="#12EAEA"
                             textClassName="text-black text-sm font-light leading-relaxed whitespace-pre-line"
                             link="https://github.com/Noore573/English-assistant-LLM"
-                            className="h-[230px]">
+                            className="h-[220px]">
                             <img src={ELM} alt="" className="w-36 h-36" />
                         </ProjectCard>
                         <ProjectCard
@@ -64,7 +64,7 @@ const Projects = () => {
                             bgColor="#FF0015"
                             textClassName="text-black text-sm font-light leading-relaxed whitespace-pre-line"
                             link={"https://github.com/Noore573/Arabic-Aialect-identification"}
-                            className="h-[230px]">
+                            className="h-[220px]">
                             <img src={ArabicDialect} alt="" className="w-32 h-32" />
                         </ProjectCard>
                     </div>
@@ -79,7 +79,7 @@ const Projects = () => {
                         bgColor="#F7FF00"
                         textClassName="text-black text-sm font-light leading-relaxed whitespace-pre-line"
                         link={"https://github.com/Noore573/E-commerce"}
-                        className="h-[315px] w-[180px]" >
+                        className="h-[305px] w-[180px]" >
                         <img src={Smileybag} alt="" className="w-28 h-40" />
                     </ProjectCard>
                     <ProjectCard
@@ -88,7 +88,7 @@ const Projects = () => {
                         bgColor="#AE00FF"
                         textClassName="text-black text-sm font-light leading-relaxed whitespace-pre-line"
                         link={"https://github.com/Noore573/SkyDiving-simulator"}
-                        className="h-[315px]  w-[180px] ">
+                        className="h-[305px]  w-[180px] ">
                         <img src={Skydiving_sim} alt="" className="w-28 h-32" />
                     </ProjectCard>
                 </div>
@@ -104,7 +104,7 @@ const Projects = () => {
                             bgColor="#F85E00"
                             textClassName="text-black text-sm font-light leading-relaxed whitespace-pre-line"
                             link={"https://github.com/Noore573/MovieRevenue"}
-                            className="h-[200px] w-[300px]">
+                            className="h-[190px] w-[300px]">
                             <img src={MovieRev} alt="" className="w-28 h-28" />
                         </ProjectCard>
                         <ProjectCard
@@ -113,7 +113,7 @@ const Projects = () => {
                             bgColor="#2A00FF"
                             textClassName="text-black text-sm font-light leading-relaxed whitespace-pre-line"
                             link={"https://github.com/Noore573/BikeShareChallenge"}
-                            className="h-[200px] w-[300px]">
+                            className="h-[190px] w-[300px]">
                             <img src={Bikeshare} alt="" className="w-32 h-28" />
                         </ProjectCard>
                         <ProjectCard
@@ -122,7 +122,7 @@ const Projects = () => {
                             bgColor="#118300"
                             textClassName="text-black text-sm font-light leading-relaxed whitespace-pre-line"
                             link={"https://github.com/Noore573/Syrian_conflic_Data_analysis"}
-                            className="h-[200px] w-[300px]">
+                            className="h-[190px] w-[300px]">
                             <img src={Syrianconf} alt="" className="w-28 h-28" />
                         </ProjectCard>
                         <ProjectCard
@@ -131,7 +131,7 @@ const Projects = () => {
                             bgColor="#00FFF2"
                             textClassName="text-black text-sm font-light leading-relaxed whitespace-pre-line"
                             link={"https://github.com/Noore573/Customer-_segmentation"}
-                            className="h-[200px] w-[300px]">
+                            className="h-[190px] w-[300px]">
                             <img src={Customerseg} alt="" className="w-24 h-24" />
                         </ProjectCard>
                     </div>
@@ -144,7 +144,7 @@ const Projects = () => {
                             bgColor="#0059FF"
                             textClassName="text-black text-sm font-light leading-relaxed whitespace-pre-line"
                             link={"https://github.com/Noore573/score-react"}
-                            className="h-[220px]">
+                            className="h-[210px]">
                             <img src={Score} alt="" className="w-36 h-36" />
                         </ProjectCard>
                         <ProjectCard
@@ -153,7 +153,7 @@ const Projects = () => {
                             bgColor="#FF7700"
                             textClassName="text-black text-sm font-light leading-relaxed whitespace-pre-line"
                             link={"https://github.com/Noore573/CRUDS"}
-                            className="h-[220px]">
+                            className="h-[210px]">
                             <img src={Cruds} alt="" className="w-36 h-36" />
                         </ProjectCard>
                         <ProjectCard
@@ -162,7 +162,7 @@ const Projects = () => {
                             bgColor="#F7FF00"
                             textClassName="text-black text-sm font-light leading-relaxed whitespace-pre-line"
                             link={"https://github.com/Noore573/FaceRecognation"}
-                            className="h-[220px]">
+                            className="h-[210px]">
                             <img src={Facerec} alt="" className="w-36 h-36" />
                         </ProjectCard>
                     </div>
