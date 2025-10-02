@@ -12,25 +12,7 @@ const About = () => {
             className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 px-6 md:px-16 py-12 text-white relative overflow-y-hidden"
         >
             {/* LEFT SIDE */}
-            <div className="flex   flex-col items-center text-center md:w-1/3">
-                <img
-                    src={profileImg}
-                    alt="Profile"
-                    className="w-30 sm:w-56 md:w-72 lg:w-80 h-auto object-cover rounded-full mb-4  hover:scale-105 transition-transform duration-300"
-                />
-                <h2 className="text-base sm:text-lg font-semibold font-robotoFlex">
-                    @NooreAlsadoon
-                </h2>
-                <a
-                    href={resume}
-                    download="Noore_Sabah_CV.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-4 px-5 sm:px-6 py-2 rounded-full bg-cyan-400 text-blue-900 font-semibold font-robotoFlex hover:bg-cyan-300 transition delay-75"
-                >
-                    View CV
-                </a>
-            </div>
+
 
             {/* RIGHT SIDE */}
             <div className="flex flex-col gap-6 md:w-2/3 w-full">

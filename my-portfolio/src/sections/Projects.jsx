@@ -43,7 +43,7 @@ const Projects = () => {
     return (
         <section
             id="projects"
-            className="h-screen flex flex-col justify-center items-center text-white px-6 relative"
+            className="min-h-screen flex flex-col justify-center items-center text-white px-6 relative"
         >
             {/* Scrollable on mobile, centered on desktop */}
             <div className="w-full overflow-x-auto">
