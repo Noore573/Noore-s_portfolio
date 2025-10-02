@@ -87,7 +87,7 @@ const Skills = () => {
             </motion.div>
 
             {/* Scroll Indicator */}
-            <div className="absolute bottom-6 animate-bounce">
+            <div className="absolute bottom-6 animate-bounce hidden sm:block">
                 <img
                     src={mouseIcon}
                     alt="Scroll Indicator"

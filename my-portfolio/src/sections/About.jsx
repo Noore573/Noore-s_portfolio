@@ -9,14 +9,14 @@ const About = () => {
     return (
         <section
             id="about"
-            className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 px-6 md:px-16 py-12 text-white relative"
+            className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 px-6 md:px-16 py-12 text-white relative overflow-y-hidden"
         >
             {/* LEFT SIDE */}
-            <div className="flex flex-col items-center text-center md:w-1/3">
+            <div className="flex   flex-col items-center text-center md:w-1/3">
                 <img
                     src={profileImg}
                     alt="Profile"
-                    className="w-40 sm:w-56 md:w-72 lg:w-80 h-auto object-cover rounded-full mb-4  hover:scale-105 transition-transform duration-300"
+                    className="w-30 sm:w-56 md:w-72 lg:w-80 h-auto object-cover rounded-full mb-4  hover:scale-105 transition-transform duration-300"
                 />
                 <h2 className="text-base sm:text-lg font-semibold font-robotoFlex">
                     @NooreAlsadoon
@@ -92,7 +92,7 @@ const About = () => {
             </div>
 
             {/* Scroll Indicator */}
-            <div className="absolute bottom-6 animate-bounce">
+            <div className="absolute bottom-6 animate-bounce hidden sm:block">
                 <img
                     src={mouseIcon}
                     alt="Scroll Indicator"
