@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/Noore-s_portfolio/static/css/main.203546cc.css",
-    "main.js": "/Noore-s_portfolio/static/js/main.35ae3c65.js",
+    "main.js": "/Noore-s_portfolio/static/js/main.6595426a.js",
     "static/js/453.438d9e50.chunk.js": "/Noore-s_portfolio/static/js/453.438d9e50.chunk.js",
+    "static/media/NewnewCV.pdf": "/Noore-s_portfolio/static/media/NewnewCV.a591fbbd642de0d3257c.pdf",
     "static/media/NLP.png": "/Noore-s_portfolio/static/media/NLP.5413479e02e175ab4635.png",
-    "static/media/NewnewCV.pdf": "/Noore-s_portfolio/static/media/NewnewCV.b6180246ca864dd1ebaf.pdf",
     "static/media/syria.png": "/Noore-s_portfolio/static/media/syria.205d03afef325595da11.png",
     "static/media/int.png": "/Noore-s_portfolio/static/media/int.3b9d4f7e6e029d2f3935.png",
     "static/media/profile.png": "/Noore-s_portfolio/static/media/profile.281a841d986b2f5c4d8d.png",
@@ -50,11 +50,11 @@
     "static/media/roboto-slab-greek-ext-400-normal.woff2": "/Noore-s_portfolio/static/media/roboto-slab-greek-ext-400-normal.74ce1c70cff67bb484d1.woff2",
     "index.html": "/Noore-s_portfolio/index.html",
     "main.203546cc.css.map": "/Noore-s_portfolio/static/css/main.203546cc.css.map",
-    "main.35ae3c65.js.map": "/Noore-s_portfolio/static/js/main.35ae3c65.js.map",
+    "main.6595426a.js.map": "/Noore-s_portfolio/static/js/main.6595426a.js.map",
     "453.438d9e50.chunk.js.map": "/Noore-s_portfolio/static/js/453.438d9e50.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.203546cc.css",
-    "static/js/main.35ae3c65.js"
+    "static/js/main.6595426a.js"
   ]
 }
