@@ -22,7 +22,7 @@ const About = () => {
                         HELLO I’M <span className="text-orange-600">NOORE SABAH</span>
                     </h3>
                     <p className="text-gray-100 text-sm sm:text-base leading-relaxed">
-                        I’m a Software Engineer and AI Specialist from Basra, Iraq,
+                        v I’m a Software Engineer and AI Specialist from Basra, Iraq,
                         passionate about turning ideas into impactful digital products.
                         With 5 years of experience, I focus on building fast, responsive web
                         and mobile apps using React and Flutter. I specialize in AI
